@@ -1,0 +1,134 @@
+{
+  "app": {
+    "title": "Smart Emergency Priority System",
+    "subtitle": "National Emergency Dispatch Simulation",
+    "simulationNotice": "Simulation only — not connected to real emergency services."
+  },
+  "nav": {
+    "home": "Home",
+    "login": "Login",
+    "logout": "Logout",
+    "citizen": "Report Emergency",
+    "dispatcher": "Dispatch Center",
+    "driver": "Driver Panel",
+    "hospital": "Hospital Dashboard",
+    "analytics": "Analytics",
+    "language": "Language"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "demoAccounts": "Demo Accounts",
+    "admin": "Admin / Dispatcher",
+    "dispatcher": "Dispatcher",
+    "driver": "Ambulance Driver",
+    "citizen": "Citizen",
+    "hospital": "Hospital Staff"
+  },
+  "emergency": {
+    "report": "Report Emergency",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "type": "Emergency Type",
+    "severity": "Severity Level",
+    "location": "GPS Location",
+    "notes": "Additional Notes",
+    "submit": "Submit Emergency",
+    "track": "Track Ambulance",
+    "eta": "Estimated Arrival",
+    "assignedHospital": "Assigned Hospital",
+    "status": "Status",
+    "types": {
+      "cardiac": "Cardiac",
+      "trauma": "Trauma",
+      "respiratory": "Respiratory",
+      "stroke": "Stroke",
+      "accident": "Accident",
+      "fire_related": "Fire Related",
+      "other": "Other"
+    },
+    "severities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "statuses": {
+      "pending": "Pending",
+      "assigned": "Assigned",
+      "accepted": "Accepted",
+      "en_route": "En Route",
+      "on_scene": "On Scene",
+      "picked_up": "Patient Picked Up",
+      "transporting": "Transporting",
+      "arrived_hospital": "Arrived at Hospital",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "dispatcher": {
+    "title": "Dispatch Command Center",
+    "queue": "Live Emergency Queue",
+    "ambulances": "Nearby Ambulances",
+    "hospitals": "Hospitals",
+    "assign": "Assign Ambulance",
+    "override": "Override Assignment",
+    "traffic": "Traffic Zones",
+    "notifications": "Notifications",
+    "soundAlert": "Sound Alerts"
+  },
+  "driver": {
+    "title": "Ambulance Driver Panel",
+    "accept": "Accept Emergency",
+    "navigate": "Start Navigation",
+    "onTheWay": "On the Way",
+    "arrived": "Arrived at Scene",
+    "pickedUp": "Patient Picked Up",
+    "completed": "Completed",
+    "newAssignment": "New Emergency Assignment"
+  },
+  "hospital": {
+    "title": "Hospital Emergency Dashboard",
+    "incoming": "Incoming Cases",
+    "prepare": "Prepare ER",
+    "queue": "Emergency Queue",
+    "ambulanceEta": "Ambulance ETA"
+  },
+  "analytics": {
+    "title": "Emergency Analytics",
+    "avgResponse": "Avg Response Time",
+    "totalEmergencies": "Total Emergencies",
+    "active": "Active Emergencies",
+    "hospitalLoad": "Hospital Load",
+    "hotspots": "Crowded Areas",
+    "byType": "By Emergency Type",
+    "bySeverity": "By Severity"
+  },
+  "map": {
+    "emergency": "Emergency",
+    "ambulance": "Ambulance",
+    "hospital": "Hospital",
+    "route": "Route",
+    "trafficGreen": "Fast Traffic",
+    "trafficYellow": "Moderate Traffic",
+    "trafficRed": "Heavy Traffic",
+    "useMyLocation": "Use My Location"
+  },
+  "notifications": {
+    "newEmergency": "New Emergency",
+    "assigned": "Ambulance Assigned",
+    "accepted": "Driver Accepted",
+    "arrived": "Ambulance Arrived",
+    "completed": "Emergency Completed"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "refresh": "Refresh",
+    "noData": "No data available",
+    "km": "km",
+    "min": "min"
+  }
+}

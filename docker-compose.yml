@@ -1,0 +1,58 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: seps-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-seps_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-seps_password}
+      POSTGRES_DB: ${POSTGRES_DB:-smart_emergency}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../docker/Dockerfile.backend
+    container_name: seps-backend
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-seps_user}:${POSTGRES_PASSWORD:-seps_password}@db:5432/${POSTGRES_DB:-smart_emergency}
+      SECRET_KEY: ${SECRET_KEY:-change-me-in-production-super-secret-key-32chars}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://frontend:3000}
+      SIMULATION_TICK_SECONDS: ${SIMULATION_TICK_SECONDS:-2}
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../docker/Dockerfile.frontend
+    container_name: seps-frontend
+    environment:
+      NEXT_PUBLIC_API_URL:  http://localhost:8000
+      NEXT_PUBLIC_WS_URL: ws://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+
+volumes:
+  postgres_data:

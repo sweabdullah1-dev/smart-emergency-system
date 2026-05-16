@@ -1,0 +1,134 @@
+{
+  "app": {
+    "title": "نظام أولوية الطوارئ الذكي",
+    "subtitle": "محاكاة نظام الإرسال الوطني للطوارئ",
+    "simulationNotice": "محاكاة فقط — غير متصل بخدمات الطوارئ الحقيقية."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "citizen": "بلاغ طوارئ",
+    "dispatcher": "مركز الإرسال",
+    "driver": "لوحة السائق",
+    "hospital": "لوحة المستشفى",
+    "analytics": "التحليلات",
+    "language": "اللغة"
+  },
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "signIn": "دخول",
+    "demoAccounts": "حسابات تجريبية",
+    "admin": "مدير / مرسل",
+    "dispatcher": "موزع الطوارئ",
+    "driver": "سائق الإسعاف",
+    "citizen": "مواطن",
+    "hospital": "طاقم المستشفى"
+  },
+  "emergency": {
+    "report": "تقديم بلاغ طوارئ",
+    "fullName": "الاسم الكامل",
+    "phone": "رقم الهاتف",
+    "type": "نوع الطوارئ",
+    "severity": "مستوى الخطورة",
+    "location": "موقع GPS",
+    "notes": "ملاحظات إضافية",
+    "submit": "إرسال البلاغ",
+    "track": "تتبع الإسعاف",
+    "eta": "وقت الوصول المتوقع",
+    "assignedHospital": "المستشفى المعين",
+    "status": "الحالة",
+    "types": {
+      "cardiac": "قلبي",
+      "trauma": "إصابة",
+      "respiratory": "تنفسي",
+      "stroke": "سكتة",
+      "accident": "حادث",
+      "fire_related": "متعلق بالحريق",
+      "other": "أخرى"
+    },
+    "severities": {
+      "low": "منخفض",
+      "medium": "متوسط",
+      "high": "مرتفع",
+      "critical": "حرج"
+    },
+    "statuses": {
+      "pending": "قيد الانتظار",
+      "assigned": "تم التعيين",
+      "accepted": "مقبول",
+      "en_route": "في الطريق",
+      "on_scene": "في الموقع",
+      "picked_up": "تم نقل المريض",
+      "transporting": "نقل إلى المستشفى",
+      "arrived_hospital": "وصل المستشفى",
+      "completed": "مكتمل",
+      "cancelled": "ملغى"
+    }
+  },
+  "dispatcher": {
+    "title": "مركز قيادة الإرسال",
+    "queue": "قائمة الطوارئ المباشرة",
+    "ambulances": "سيارات الإسعاف القريبة",
+    "hospitals": "المستشفيات",
+    "assign": "تعيين إسعاف",
+    "override": "تجاوز التعيين",
+    "traffic": "مناطق الازدحام",
+    "notifications": "الإشعارات",
+    "soundAlert": "تنبيهات صوتية"
+  },
+  "driver": {
+    "title": "لوحة سائق الإسعاف",
+    "accept": "قبول الطوارئ",
+    "navigate": "بدء الملاحة",
+    "onTheWay": "في الطريق",
+    "arrived": "وصلت للموقع",
+    "pickedUp": "تم نقل المريض",
+    "completed": "مكتمل",
+    "newAssignment": "تعيين طوارئ جديد"
+  },
+  "hospital": {
+    "title": "لوحة طوارئ المستشفى",
+    "incoming": "حالات قادمة",
+    "prepare": "تجهيز الطوارئ",
+    "queue": "قائمة الانتظار",
+    "ambulanceEta": "وقت وصول الإسعاف"
+  },
+  "analytics": {
+    "title": "تحليلات الطوارئ",
+    "avgResponse": "متوسط وقت الاستجابة",
+    "totalEmergencies": "إجمالي الطوارئ",
+    "active": "طوارئ نشطة",
+    "hospitalLoad": "حمولة المستشفيات",
+    "hotspots": "المناطق المزدحمة",
+    "byType": "حسب النوع",
+    "bySeverity": "حسب الخطورة"
+  },
+  "map": {
+    "emergency": "طوارئ",
+    "ambulance": "إسعاف",
+    "hospital": "مستشفى",
+    "route": "المسار",
+    "trafficGreen": "مرور سريع",
+    "trafficYellow": "مرور متوسط",
+    "trafficRed": "ازدحام شديد",
+    "useMyLocation": "استخدم موقعي"
+  },
+  "notifications": {
+    "newEmergency": "طوارئ جديدة",
+    "assigned": "تم تعيين الإسعاف",
+    "accepted": "قبل السائق",
+    "arrived": "وصل الإسعاف",
+    "completed": "اكتملت الحالة"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "refresh": "تحديث",
+    "noData": "لا توجد بيانات",
+    "km": "كم",
+    "min": "دقيقة"
+  }
+}
